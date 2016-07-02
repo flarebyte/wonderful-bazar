@@ -1,0 +1,61 @@
+h1.top-aligned{font-size:2.07em;color:#2e3436;padding:0.300000em 8.000000px 0.300000em 8.000000px;font-weight:bold;margin:0.000000em -8px 0.500000em -8px;background-color:#d3d7cf;}
+h1{font-size:2.07em;color:#2e3436;padding:0.300000em 8.000000px 0.300000em 8.000000px;border-top:1px solid #d3d7cf;margin:0.200000em -8px 0.300000em -8px;background-color:#d3d7cf;}
+h2{font-size:1.73em;color:#2e3436;clear:both;border-bottom:1px solid #d3d7cf;padding:0.000000em 4.000000px 0.000000em 8.000000px;margin:0.200000em -8px 0.300000em -8px;background-color:#d3d7cf;}
+h3{font-size:1.44em;color:#2e3436;clear:both;border-bottom:1px solid #d3d7cf;padding:0.000000em 4.000000px 0.000000em 8.000000px;margin:0.200000em -8px 0.300000em -8px;background-color:#d3d7cf;}
+h4{font-size:1.20em;color:#d3d7cf;clear:both;border-bottom:1px solid #d3d7cf;padding:0.000000em 4.000000px 0.000000em 8.000000px;margin:0.200000em -8px 0.300000em -8px;background-color:#2e3436;}
+body{color:#3465a4;font-size:100%;font-weight:normal;font-family:Gill Sans, Helvetica, Verdana,Arial;}
+p{clear:both;margin-top:0.2em;margin-bottom:0.8em;line-height:125%;}
+#footer p{color:#3465a4;padding:0em;font-size:.8em;margin:0.000000em -8px 0.000000em -8px;}
+strong{font-weight:bolder;}
+em{font-style:italic;}
+#wrap{padding:0;width:100%;position:absolute;overflow:hidden;background-color:#2e3436;left:0;}
+#content{margin:8px 8px 8px 8px;}
+#footer{color:white;clear:both;height:3em;padding:.7em 0em;background-color:#3465a4;}
+ul.breadcrumbs{padding:0.500000em 8.000000px 0.500000em 8.000000px;font-size:80%;margin:0.000000em -8px 0.000000em -8px;list-style-type:none;}
+ul.breadcrumbs li{line-height:1.5em;display:inline;}
+div.rating span{padding-top:0.4em;float:right;}
+div.rating{width:150px;margin-bottom:1em;background:url(http://media.flairbyte.com/fe3l/falcon/png/sprite-rating.png) no-repeat 0px 0px;height:24px;}
+div.stars-0{background-position:left 0px;}
+div.stars-1{background-position:left -25px;}
+div.stars-2{background-position:left -50px;}
+div.stars-3{background-position:left -75px;}
+div.stars-4{background-position:left -100px;}
+div.stars-5{background-position:left -125px;}
+div.top{font-size:.9em;clear:both;border-bottom:1px solid #d3d7cf;padding:.3em 2.2em .3em 2.2em;border-top:1px solid #d3d7cf;background:url(http://media.flairbyte.com/fe3l/falcon/png/img-top.png) no-repeat 10px center;margin:0.5em -10px 0.5em -10px;}
+div.top a{color:;width:100%;display:block;text-decoration:none;}
+ul.nav-footer{font-size:.85em;display:block;color:#d3d7cf;height:2em;padding:0em .5em .5em 8px;}
+ul.nav-footer li{float:left;line-height:1.5em;display:inline;}
+ul.nav-footer li a{border-right:1px solid #d3d7cf;text-decoration:none;padding-right:0.5em;padding-left:0.5em;}
+ul.nav-footer li.last a{padding-right:0;border-right:none;}
+ul.nav-footer li.first a{padding-left:0;}
+ul.nav-footer a{color:#2e3436;}
+ul.nav-footer a:hover{color:#d3d7cf;background-color:#2e3436;outline:none;}
+.advertisement{padding:0;width:100%;margin:0.5em 0 0.5em 0;}
+.advertisement p{margin-bottom:0;padding:0.4em 0.4em;margin-top:0;border:1px solid #d3d7cf;background-color:#888a85;}
+.advertisement span{font-size:0.7em;color:white;float:right;padding:0;padding-bottom:0.3em;text-transform:uppercase;}
+#header div.branding{width:100%;background:;overflow:hidden;height:68px;display:block;}
+#header div.branding img{padding-top:20px;padding-left:10px;}
+#header div.branding a{background-image:none;width:100%;padding-right:none;height:68px;display:block;}
+#header div.branding p{text-indent:-5000px;}
+a{color:#3465a4;}
+a:hover{color:#2e3436;background-color:#3465a4;}
+a.external{padding-right:1em;background:url(http://media.flairbyte.com/fe3l/falcon/png/img-link-external.png) no-repeat right top;}
+a.ical{padding-right:1em;background:url(http://media.flairbyte.com/fe3l/falcon/png/img-link-ical.png) no-repeat right top;}
+a[href^="mailto:"]{padding-right:1em;background:url(http://media.flairbyte.com/fe3l/falcon/png/img-link-email.png) no-repeat right top;}
+a[href^="tel:"]{padding-right:1em;background:url(http://media.flairbyte.com/fe3l/falcon/png/img-link-tel.png) no-repeat right top;}
+a[href^="sms:"]{padding-right:1em;background:url(http://media.flairbyte.com/fe3l/falcon/png/img-link-sms.png) no-repeat right top;}
+ul.list-cloud{color:#3465a4;list-style-type:none;}
+li.cloud0{font-size:0.800000em;display:block;}
+li.cloud1{font-size:0.950000em;display:block;}
+li.cloud2{font-size:1.100000em;display:block;}
+li.cloud3{font-size:1.250000em;display:block;}
+li.cloud4{font-size:1.400000em;display:block;}
+ul.list-cloud a{text-decoration:none;display:block;}
+ul.list-cloud a:hover{color:#2e3436;background-color:#d3d7cf;outline:none;}
+dl{padding:0;margin:1.000000em -8px 1.000000em -8px;}
+dt{font-size:120%;top:0.8em;width:4em;position:relative;left:0;}
+dd{padding:0em 0 .5em 1em;margin:0 0 0 8em;border-left:1px solid #d3d7cf;}
+ul.tube-list{color:#3465a4;padding:0em .5em .5em 8px;height:2em;display:block;}
+.travelstatus-green{line-height:1.5em;color:#2e3436;float:left;display:inline;padding:0.000000em 4.000000px 0.000000em 4.000000px;border-right:1px solid white;background-color:#4e9a06;}
+.travelstatus-orange{font-size:80%;display:inline;color:white;float:left;padding:0.000000em 4.000000px 0.000000em 4.000000px;line-height:1.5em;}
+.travelstatus-red{font-size:70%;display:inline;color:white;float:left;padding:0.000000em 4.000000px 0.000000em 4.000000px;line-height:1.5em;}

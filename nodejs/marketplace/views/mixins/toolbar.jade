@@ -1,0 +1,35 @@
+mixin marketplaceCategories(item)
+  div(data-role="navbar", data-iconpos="left")
+    ul(class="nav")
+      li
+        a(href="/buy", class="ui-btn-active", data-icon="check") Buy
+      li
+        a(href="/sell") Sell
+      li
+        a(href="/profiles") Profiles 
+      li
+        a(href="/spaces") Spaces
+
+mixin searchBuyCategory(item)
+  div(data-role="navbar", data-iconpos="left")
+    ul(class="nav")
+      li
+        a(href="/latest") Top Paid 
+      li
+        a(href="/popular", class="ui-btn-active", data-icon="check") Top Free 
+      li
+        a(href="/all") Top Grossing
+      li
+        a(href="/popular") Latest 
+      li
+        a(href="/all") All
+
+mixin searchSellCategory(item)
+  div(data-role="navbar", data-iconpos="left")
+    ul(class="nav")
+      li
+        a(href="/offers") Offers 
+      li
+        a(href="/products", class="ui-btn-active", data-icon="check") Products & Services
+      li
+        a(href="/features") Product features

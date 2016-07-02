@@ -1,0 +1,65 @@
+---
+renderer:
+  template: 'bootstrap/view9459'
+  template_type: 'jade'
+  url: 'swe3t.com'
+headers:
+  content_language: 'en'
+head:
+  title: 'swe3t.com | a new sweet taste of London'
+meta:
+    author: 'Olivier Huin'
+    description: 'Discover the sweet taste of London'
+link:
+    bootstrap: 'biz-flarebyte/bootstrap-2.3/p082418155130'
+    css: 'biz-flarebyte/custom/p607785726340'
+    icon: 'biz-flarebyte/custom/p607785726340/ico/flarebyte-logo-icon.463033393461'
+pageSchema: 'http://schema.org/WebPage'
+home:
+  t: 'swe3t.com'
+  u: 'http://swe3t.com'
+img: 
+  dir: 'biz-flarebyte/custom/p607785726340'
+  main:
+    u: 'landing-page.239921920358.norm'
+    a: 'Silhouette of two women'
+jumbotron:
+  h1: 'Welcome to swe3t.com'
+  lead: 'This website is currently under construction.'
+copyright: 
+  t: 'Copyright (c) 2013 Flarebyte.com Limited. All rights reserved.'
+topMenu:
+  - u: 'http://swe3t.com'
+    t: 'Home'
+    active: true
+  - u: '#contact'
+    t: 'Contact'
+marketing:
+contact:
+  organization:
+    schema: 'http://schema.org/Organization'
+    name: 'Flarebyte.com Limited'
+    url: 'http://flarebyte.com/about'
+    description: 'Flarebyte.com Ltd is a start-up specialized in the development of web applications.'
+    postalAddress:
+      streetAddress: '88 Wood Street'
+      postOfficeBoxNumber: ''
+      addressLocality: 'London'
+      addressRegion: ''
+      postalCode: 'EC2V 7RS'
+      addressCountry: 'United Kingdom'
+    contactPoints:
+      - contactType: 'United Kingdom'
+        email: 'uk (at) flarebyte.com'
+        telephone: '+ 44 (0)20 8528 1006'
+        faxNumber: '+ 44 (0)20 8528 1001'
+      - contactType: 'France'
+        email: 'fr (at) flarebyte.com'
+        telephone: '+ 44 (0)20 8528 1006'
+        faxNumber: '+ 44 (0)20 8528 1001'
+i18n:
+  contactPoint:
+    email: 'Email'
+    telephone: 'Tel'
+    faxNumber: 'Fax'
+  contact: 'Contact'

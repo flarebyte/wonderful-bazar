@@ -1,0 +1,7 @@
+include mixins/listing
+ul
+  mixin listing_count_bubble_from_stats_with_href(everything.title, everything.item,everything.href, everything.statKey)
+  mixin listing_count_bubble_from_stats_with_href(no_item.title, no_item.item, no_item.href, no_item.statKey)
+  mixin listing_count_bubble_from_stats_with_href(item_is_null.title, item_is_null.item, item_is_null.href, item_is_null.statKey)
+  mixin listing_count_bubble_from_stats_with_href(stats_is_null.title, stats_is_null.item, stats_is_null.href, stats_is_null.statKey)
+  mixin listing_count_bubble_from_stats_with_href(no_statKey_value.title, no_statKey_value.item, no_statKey_value.href, no_statKey_value.statKey)

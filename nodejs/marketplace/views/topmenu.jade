@@ -1,0 +1,18 @@
+div(data-role="header",data-position="fixed", data-theme="a", class="nav-fb-topmenu")
+  div(data-role="navbar", class="nav-fb-topmenu")
+    ul
+      each sp in spaces
+        if sp.space == edition.space
+          li
+            a(href="#{sp.homepage}", class="ui-btn-active", id="#{sp.data_icon}",  data-icon="custom") #{sp.short_title}
+        else
+          li
+            a(href="#{sp.homepage}", id ="#{sp.data_icon}", data-icon="custom") #{sp.short_title}
+      li
+        - if (user.secure)
+          img(width="32", height="32", src="/images/lock.png", alt="SSL activated")
+        - if (user.login)
+          img(width="32", height="32", src="/images/geo-id.png", alt="Login")
+        img(width="32", height="32", src="/images/wifi.png", alt="connected to the web")
+        #{user.screenname}
+      

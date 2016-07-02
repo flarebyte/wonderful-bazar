@@ -1,0 +1,22 @@
+
+# MacPorts Installer addition on 2011-02-24_at_23:18:53: adding an appropriate PATH variable for use with MacPorts.
+export AKKA_HOME=/Applications/typesafe-stack
+export NODE_PATH=/usr/local/lib/node:/usr/lib/node_modules
+export NODE_ENV="development node app.js"
+export FLAREBYTE_LOGS="/Users/olivier/Library/Logs/flarebyte"
+export FLAREBYTE_OPS="/Users/olivier/Dropbox/flarebyte.com-ltd/software development/node/ops"
+export FLAREBYTE_NODE_APPS="/Users/olivier/Dropbox/flarebyte.com-ltd/software development/node"
+export MAGICK_HOME="$HOME/ImageMagick-6.8.4"
+export DYLD_LIBRARY_PATH="$MAGICK_HOME/lib/"
+export SCALA_HOME="/Applications/scala-2.10.1/bin"
+export GRAPHIC_SCRIPTS="/Users/olivier/Google Drive/graphic-design/scripts"
+export HOSTING_SCRIPTS="/Users/olivier/Google Drive/hosting/scripts"
+export PATH=/opt/local/bin:/opt/local/sbin:~/bin:$PATH:$SCALA_HOME:$GRAPHIC_SCRIPTS:$HOSTING_SCRIPTS
+export NODE_ENV=development
+
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+#Aliases
+alias svg2='find . -name \*simp1.svg -exec qlmanage -t -s 2000 -o ~/Pictures/svg/ {} \;'
+alias grey='find . -name \*i.svg -exec tango-normalize-grey.py {} \;'
+. alias.sh

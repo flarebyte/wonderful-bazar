@@ -1,0 +1,14 @@
+ {
+  "name": "marketplace.i18n.slugdata",
+  "description": "Market Place module",
+  "maintainers": "Olivier Huin <olivier.huin@flarebyte.com>",
+  "homepage": "",
+  "author": "Olivier Huin",
+  "version": "0.8",
+  "main": "./lib/marketplace.i18n.slugdata",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

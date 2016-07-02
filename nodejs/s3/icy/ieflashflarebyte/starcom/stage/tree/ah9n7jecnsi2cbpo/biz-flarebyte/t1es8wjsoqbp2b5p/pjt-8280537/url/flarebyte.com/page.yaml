@@ -1,0 +1,81 @@
+---
+renderer:
+  template: 'bootstrap/view9459'
+  template_type: 'jade'
+  url: 'flarebyte.com'
+headers:
+  content_language: 'en'
+head:
+  title: 'Flarebyte.com Ltd | Scalable web applications within deadlines'
+meta:
+    author: 'Olivier Huin'
+    description: 'Flarebyte.com Ltd develops web applications in Scala, Java and node.js'
+link:
+    bootstrap: 'biz-flarebyte/bootstrap-2.3/p082418155130'
+    css: 'biz-flarebyte/custom/p607785726340'
+    icon: 'biz-flarebyte/custom/p607785726340/ico/flarebyte-logo-icon.463033393461'
+pageSchema: 'http://schema.org/WebPage'
+home:
+  t: 'flarebyte.com'
+  u: 'http://flarebyte.com'
+jumbotron:
+  h1: 'About Flarebyte.com Limited'
+  lead: 'Flarebyte.com Ltd is a start-up specialized in the development of web applications.'
+copyright: 
+  t: 'Copyright (c) 2013 Flarebyte.com Limited. All rights reserved.'
+topMenu:
+  - u: 'http://flarebyte.com'
+    t: 'ENGLISH'
+    active: true
+  - u: 'http://flarebyte.com/fr'
+    t: 'FRANCAIS'
+
+featurettes:
+  -
+    span: 6
+    list:
+      - t: 'Web software development'
+        p: 'Java, Scala, Python, Node.js, PHP, Javascript'
+      - t: 'System architecture'
+        p: 'We can design an object oriented architecture for your application that will facilitate the work of your team.'
+      - t: 'Project management'
+        p: 'Work breakdown, planning and budgeting. Monitoring time, cost, scope constraints.'
+  - 
+    span: 6
+    list:
+      - t: 'Graphic Design'
+        p: 'Web design, logo design, illustration'
+      - t: 'Business Models'
+        p: 'Understand our clients, understand their customers'
+      - t: 'Mobile and responsive'
+        p: 'Optimal viewing experience on any device'
+
+
+contact:
+  organization:
+    schema: 'http://schema.org/Organization'
+    name: 'Flarebyte.com Limited'
+    url: 'http://flarebyte.com/about'
+    description: 'Flarebyte.com Ltd is a start-up specialized in the development of web applications.'
+    postalAddress:
+      streetAddress: '88 Wood Street'
+      postOfficeBoxNumber: ''
+      addressLocality: 'London'
+      addressRegion: ''
+      postalCode: 'EC2V 7RS'
+      addressCountry: 'United Kingdom'
+    contactPoints:
+      - contactType: 'United Kingdom'
+        email: 'uk (at) flarebyte.com'
+        telephone: '+ 44 (0)20 8528 1006'
+        faxNumber: '+ 44 (0)20 8528 1001'
+      - contactType: 'France'
+        email: 'fr (at) flarebyte.com'
+        telephone: '+ 44 (0)20 8528 1006'
+        faxNumber: '+ 44 (0)20 8528 1001'
+i18n:
+  contactPoint:
+    email: 'Email'
+    telephone: 'Tel'
+    faxNumber: 'Fax'
+  contact: 'Contact'

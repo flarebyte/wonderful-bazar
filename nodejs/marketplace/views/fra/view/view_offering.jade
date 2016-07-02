@@ -1,0 +1,48 @@
+include ../../mixins/all
+- if (data._root_)
+  div
+    div(data-role="page",id="root")
+      include ../../topmenu
+      header
+        div(data-role="header", data-theme="a")
+          h2(itemprop="name") #{data._root_.label__title}
+          a(href="/", data-role="button", data-transition="fade", data-icon="home") Home
+          a(href="#edit", data-role="button", data-transition="fade") Edit
+    
+      div(data-role="content",itemscope, itemtype="#{data._root_.type}")
+        
+        ul(data-role="listview", data-theme="e", data-divider-theme="a")
+          mixin divider_title('root')
+          mixin listing_thumbnail_with_href(data._root_,'#description')
+        p
+        
+        ul(data-role="listview", )
+          mixin divider_title('creator')
+          mixin listing_thumbnail_with_link_to_page(data._root_._creator_,'about__view_page')
+          mixin divider_title('hasWarrantyPromise')
+          mixin listing_thumbnail_with_link_to_page(data._root_._hasWarrantyPromise_,'about__view_page')
+          mixin divider_title('availableAtOrFrom')
+          mixin listing_thumbnail_with_link_to_page(data._root_._availableAtOrFrom_,'about__view_page')
+        p
+        
+        ul(data-role="listview", data-theme="e", data-divider-theme="a")
+          mixin divider_title('Other')
+          mixin listing_count_bubble_from_stats_with_link_to_page('comments', data._root_,'comments__view_page','numberOfComments')
+          mixin listing_count_bubble_from_stats_with_link_to_page('outbounds', data._root_,'outbounds__view_page','numberOfOutbounds')
+        p
+          
+    
+      include ../../footer
+    - if (data._root_._body_)
+      div(data-role="page",id="description")
+        include ../../topmenu
+        header
+          div(data-role="header", data-theme="a")
+            h3(itemprop="name") #{data._root_.label__title}
+            a(href="#root", data-role="button", data-transition="slideup", data-icon="back") Back
+            a(href="#edit12", data-role="button", data-transition="fade") Edit
+
+        div 
+          !{data._root_._body___html}    
+
+        include ../../footer

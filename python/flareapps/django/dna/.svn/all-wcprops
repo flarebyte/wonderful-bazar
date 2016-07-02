@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/flareapps/!svn/ver/1/django/dna
+END
+admin.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/flareapps/!svn/ver/1/django/dna/admin.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/flareapps/!svn/ver/1/django/dna/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/flareapps/!svn/ver/1/django/dna/__init__.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/flareapps/!svn/ver/1/django/dna/models.py
+END

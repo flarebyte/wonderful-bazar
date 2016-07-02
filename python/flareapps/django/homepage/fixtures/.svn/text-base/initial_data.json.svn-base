@@ -1,0 +1,18 @@
+[
+  {
+    "model": "homepage.Section",
+    "pk": 0,
+    "fields": {
+   	"slug" : "undefined",
+	"title" : "undefined",
+	"title_url" : "http://www.flarebyte.com/",
+	"thumbnail_alt" :  "undefined",
+	"thumbnail_url" : "http://www.flarebyte.com/",
+	"content" : "no content",
+	"description" :  "no description",
+	"keywords" :  "no keywords",
+	"locale" :  "en"
+    }
+  }
+
+]

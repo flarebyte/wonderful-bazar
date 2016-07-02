@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/flareapps/!svn/ver/1/django/middleware
+END
+device-profile.json
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/flareapps/!svn/ver/1/django/middleware/device-profile.json
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/flareapps/!svn/ver/1/django/middleware/tests.py
+END
+loadanalyzer.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/flareapps/!svn/ver/1/django/middleware/loadanalyzer.py
+END
+devicepick.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/flareapps/!svn/ver/1/django/middleware/devicepick.py
+END
+requestsjournal.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/flareapps/!svn/ver/1/django/middleware/requestsjournal.py
+END
+device-models.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/flareapps/!svn/ver/1/django/middleware/device-models.txt
+END

@@ -1,0 +1,23 @@
+!!! 5
+html
+  head
+    title= meta.title
+    //link(rel='stylesheet', href='/stylesheets/reset.css', type='text/css')
+    link(rel='shortcut icon', type='image/png', href='#{edition.data_hosting.HTTP_MEDIA}/#{edition.space}/image/static/all/#{edition.web_hosting.brand.logo.id}/16x16/#{edition.web_hosting.brand.logo.version}.png')
+    link(rel="stylesheet", href="/stylesheets/jquery.mobile-1.0.min.css")
+    link(rel='stylesheet', href='/stylesheets/style.css', type='text/css')
+    //link(rel='stylesheet', href='/stylesheets/wmd.css', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Fredericka+the+Great',rel='stylesheet',type='text/css')
+    meta(http-equiv="Content-Type",content="text/html; charset=utf-8") 
+    meta(name="HandheldFriendly",content="True") 
+    meta(name="viewport",content="width=device-width, initial-scale=1")
+    script(type="text/javascript",src="/javascripts/jquery.js")
+    script(type="text/javascript",src="/javascripts/jquery.mobile-1.0.min.js")
+    //script(type="text/javascript",src="/javascripts/jquery.wmd.min.js")
+    script
+      var more = !{JSON.stringify(edition)}
+      
+
+  body(itemscope, itemtype="http://schema.org/CollectionPage")
+    div!= body                 
+  

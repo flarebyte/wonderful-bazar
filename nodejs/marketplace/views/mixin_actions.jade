@@ -1,0 +1,209 @@
+mixin stats_span_views_likes(stats)
+  em(itemprop="interactionCount", content="UserPageVisits:#{stats.numberOfReads}") #{stats.numberOfReads} 
+    span(class="label info") Views
+  span !{"&nbsp;&nbsp;&nbsp;"}
+  em(itemprop="interactionCount", content="UserLikes:#{stats.numberOfVotes}") #{stats.numberOfVotes} 
+    span(class="label info") Likes
+
+mixin date_updated_span(item)
+ - if (item.modified)
+   meta(itemprop="dateModified",content="#{item.modified}")
+   span(class="label info") #{item.modified__day}
+   span !{"&nbsp;"}
+   span(class="label info") #{item.modified__month_name}
+   span !{"&nbsp;"}
+   span(class="label info") #{item.modified__year}
+
+mixin actionBuy(href1)
+  div
+    a(href="#{href1}", data-role="button", data-transition="fade", data-theme="b") Buy
+
+mixin actionsMainStd(href1)
+  ul(data-role="controlgroup", data-type="horizontal", class="localnav")
+    li
+      a(href="#{href1}", data-role="button", data-transition="fade", class="ui-btn-active") Edit
+    li
+      a(href="#{href1}", data-role="button", data-transition="fade", data-icon="delete") Delete
+    li
+      a(href="#{href1}", data-role="button", data-transition="fade") History
+
+mixin actionsStd(item)
+  ul(data-role="controlgroup", data-type="horizontal", class="localnav")
+    li
+      a(href="#{item.about__view_page}", data-role="button", data-transition="fade") View
+    li
+      a(href="#{item.about__edit_page}?action=edit", data-role="button", data-transition="fade", class="ui-btn-active") Edit
+    li
+      a(href="#{item.history__history_page}", data-role="button", data-transition="fade") History
+
+mixin actionsStats(item)
+  ul(data-role="controlgroup", data-type="horizontal", class="localnav")
+    li
+      a(href="#{item.about__view_page}", data-role="button", data-transition="fade") Like
+
+mixin actionsImage(item)
+  ul(data-role="controlgroup", data-type="horizontal", class="localnav")
+    li
+      a(href="#{item.about__view_page}?action=edit", data-role="button", data-transition="fade", class="ui-btn-active") Upload
+    li
+      a(href="#{item.about__edit_page}?action=delete", data-role="button", data-transition="fade") Delete
+
+mixin actionsSection(item)
+  ul(data-role="listview", data-theme="f")
+    li
+      a(href="/can") Canada 
+    li
+      a(href="/can") France 
+    li
+      a(href="/can") uk
+
+
+mixin searchBuyCategory(item)
+  div(data-role="navbar", data-iconpos="left")
+    ul(class="nav")
+      li
+        a(href="/latest") Top Paid 
+      li
+        a(href="/popular", class="ui-btn-active", data-icon="check") Top Free 
+      li
+        a(href="/all") Top Grossing
+      li
+        a(href="/popular") Latest 
+      li
+        a(href="/all") All
+
+mixin searchSellCategory(item)
+  div(data-role="navbar", data-iconpos="left")
+    ul(class="nav")
+      li
+        a(href="/offers") Offers 
+      li
+        a(href="/products", class="ui-btn-active", data-icon="check") Products & Services
+      li
+        a(href="/features") Product features
+        
+mixin marketplaceCategories(item)
+  div(data-role="navbar", data-iconpos="left")
+    ul(class="nav")
+      li
+        a(href="/buy", class="ui-btn-active", data-icon="check") Buy
+      li
+        a(href="/sell") Sell
+      li
+        a(href="/profiles") Profiles 
+      li
+        a(href="/spaces") Spaces
+
+
+mixin listItemThumbnail(item)
+  - if (item)
+    li
+      a(href="/")
+        mixin imageFeature(item.image, item.label__title)
+        h6 #{item.label__title} 
+        p #{item.abstract}
+        -if (item._stats_)
+          p 
+            mixin stats_span_views_likes(item._stats_)
+        
+
+mixin listviewThumbnail(items)
+  ul(data-role="listview")
+    each item in items
+      mixin listItemThumbnail(item)
+      
+mixin listviewThumbnailProducts(includesObject)
+  - if (includesObject)
+    each product in includesObject
+      - if (product._typeOfGood_)
+         mixin listItemThumbnail(product._typeOfGood_)
+
+mixin listItemPrice(item)
+  li 
+    a(href="#{item.about__page}?action=buy")
+    h5 Buy for #{item.UnitPriceSpecification.hasMaxCurrencyValue} #{item.UnitPriceSpecification.hasCurrency}.  
+      span
+        mixin itemExpiration(item._stats_)
+
+mixin listItemComments(item)
+  - if (item)
+    - if (item._comments_)
+      - if (item._stats_)
+        li
+          a(href="#comments") Comments
+            span(class="ui-li-count") #{item._stats_.numberOfComments}
+
+mixin listItemOutbounds(item)
+  - if (item)
+    - if (item._outbounds_)
+      li
+        a(href="#outbounds") Related
+          span(class="ui-li-count") !{item._outbounds_.related.length+item._outbounds_.broader.length+item._outbounds_.narrower.length}
+
+mixin listItemSubjects(item)
+  - if (item)
+    - if (item._subject_)
+      li
+        a(href="#subjects") Keywords
+          span(class="ui-li-count") !{item._subject_.length}
+
+mixin listItemOffer(item)
+  - if (item)
+    li
+      a(href="#description")
+        mixin imageFeature(item.image, item.label__title)
+        h6 #{item.label__title} 
+          span(class="label success") in stock
+        p #{item.abstract} 
+        -if (item._stats_)
+          p 
+            mixin stats_span_views_likes(item._stats_)
+
+mixin listItemOfferSearch(item)
+  - if (item)
+    li
+      a(href="#{item.about__view_page}")
+        mixin imageFeature(item.image, item.label__title)
+        h6 #{item.label__title} 
+          span(class="label success") in stock
+        p #{item.abstract} 
+        -if (item._stats_)
+          p 
+            mixin stats_span_views_likes(item._stats_)
+
+mixin listviewThumbnailOffersSearch(results)
+  - if (results)
+    each offer in results
+      mixin listItemOfferSearch(offer)
+
+mixin listItemComment(item)
+  - if (item)
+    li
+      a(href="/")
+        -if (item._creator_)
+          mixin imageFeature(item._creator_.image, item._creator_.label__title)
+          h4 #{item._creator_.label__title}
+        p #{item.abstract}
+        -if (item._stats_)
+          p 
+            mixin stats_span_views_likes(item._stats_)
+        p Was this helpul ? Yes/No/Spam
+          mixin actionsStd(item)
+        p(class="ui-li-aside")
+          mixin date_updated_span(item)
+
+mixin listItemsOtherRoot(item)
+  mixin listItemComments(item)
+  mixin listItemOutbounds(item)
+  mixin listItemSubjects(item)
+
+mixin date_divider(title, item)
+  li(data-role="list-divider", data-theme="f") #{title}
+    span(class="pull-right")
+      mixin date_updated_span(item)
+
+mixin count_divider(title, items)
+  - if (items)
+    li(data-role="list-divider", data-theme="f") #{title}
+      span(class="ui-li-count") !{items.length}
+

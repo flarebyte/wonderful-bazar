@@ -1,0 +1,14 @@
+ {
+  "name": "mondrian",
+  "description": "SVG Mondrian",
+  "maintainers": "Olivier Huin <olivier.huin@flarebyte.com>",
+  "homepage": "",
+  "author": "Olivier Huin",
+  "version": "0.8",
+  "main": "./lib/mondrian",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

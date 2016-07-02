@@ -1,0 +1,1 @@
+viewer = require("marketplace.viewer")

@@ -1,0 +1,14 @@
+ {
+  "name": "marketplace.server",
+  "description": "Calculate the probable urls for a given semantic id",
+  "maintainers": "Olivier Huin <olivier.huin@flarebyte.com>",
+  "homepage": "",
+  "author": "Node.js Support Flarebyte.com <node.js.support@flarebyte.com>",
+  "version": "0.8",
+  "main": "./lib/marketplace.server",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

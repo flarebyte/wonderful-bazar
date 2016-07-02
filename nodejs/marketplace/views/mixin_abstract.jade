@@ -1,0 +1,20 @@
+        
+mixin headerRoot(domain)
+  header
+    div(data-role="header", data-theme="a")
+      h2(itemprop="name") #{domain.label__title}
+      a(href="/", data-role="button", data-transition="fade", data-icon="home") Home
+      a(href="#edit", data-role="button", data-transition="fade") Edit
+
+mixin headerSecondary(domain)
+  header
+    div(data-role="header", data-theme="a")
+      h3(itemprop="name") #{domain.label__title}
+      a(href="#root", data-role="button", data-transition="slideup", data-icon="back") Back
+      a(href="#edit12", data-role="button", data-transition="fade") Edit
+          
+mixin headerSearch
+  header
+    div(data-role="header", data-theme="a")
+      h2(itemprop="name") Search
+ 

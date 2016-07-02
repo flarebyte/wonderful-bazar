@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/flareapps/!svn/ver/1/django/device
+END
+admin.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/flareapps/!svn/ver/1/django/device/admin.py
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/flareapps/!svn/ver/1/django/device/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/flareapps/!svn/ver/1/django/device/__init__.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/flareapps/!svn/ver/1/django/device/tests.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/flareapps/!svn/ver/1/django/device/models.py
+END
+urls.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/flareapps/!svn/ver/1/django/device/urls.py
+END

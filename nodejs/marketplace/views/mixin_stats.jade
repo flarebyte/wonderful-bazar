@@ -1,0 +1,39 @@
+mixin star_rating(stats)
+  div(class="highlights")
+    div(itemprop="aggregateRating",itemscope,itemtype="http://schema.org/AggregateRating")
+      div(class="rating stars-4")
+        span(itemprop="ratingValue") #{stats.numberOfVotes}
+
+mixin rating_views_likes_comments(stats)
+  p(itemprop="interactionCount", content="UserPageVisits:#{stats.numberOfReads}") #{stats.numberOfReads} 
+    span(class="label info") Views
+  p(itemprop="interactionCount", content="UserLikes:#{stats.numberOfVotes}") #{stats.numberOfVotes} 
+    span(class="label info") Likes
+  p(itemprop="interactionCount", content="UserComments:#{stats.numberOfComments}") #{stats.numberOfComments}
+    span(class="label info") Comments
+
+        
+mixin rating_likes(stats)
+  p(itemprop="interactionCount", content="UserLikes:#{stats.numberOfVotes}") #{stats.numberOfVotes} 
+    span(class="label info") Likes
+
+mixin itemInStock(stats)
+  span(itemprop="interactionCount", content="UserLikes:#{stats.numberOfVotes}")
+    span(class="label success") in stock
+      link(itemprop="availability", href="http://schema.org/InStock")
+
+mixin itemExpiration(stats)
+  span(itemprop="interactionCount", content="UserLikes:#{stats.numberOfVotes}")
+    span(class="label warning") Expires in 10 min
+
+
+mixin priceOffer(offer)
+  div(class="box-price")
+    h5 Price
+    div(itemprop="offers",itemscope, itemtype="http://schema.org/Offer")
+      ul
+        li(class="currency-unit") #{offer.UnitPriceSpecification.hasMinCurrencyValue} to #{offer.UnitPriceSpecification.hasMaxCurrencyValue} #{offer.UnitPriceSpecification.hasCurrency}
+        li(class="currency") From 
+          span(itemprop="price") 55.00 £
+      //label(for="sliderPrice") Price:
+        //input(type="range",name="slider",id="sliderPrice",value="#{offer.UnitPriceSpecification.hasMinCurrencyValue}", min="0", max="100")

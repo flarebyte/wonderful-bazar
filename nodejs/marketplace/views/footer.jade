@@ -1,0 +1,39 @@
+footer
+  div
+    div(data-role="footer", data-theme="a")
+      p Messages (4) : check your balance ...
+  div(class="container_xxl")
+    div(class="container_left_small")
+      img(src="http://localhost:3001/flarebyte-marketplace/image/default/00001/150x50/v1.png", alt="#{edition.web_hosting.brand.website.title}")
+      p Links things and people
+    
+    div(class="container_right_large")
+      div(data-role="footer", data-theme="a")
+        div(data-role="navbar")
+          ul(class="nav")
+            each sp in edition.web_hosting.footerA
+              li
+                a(href="#{sp.homepage}") #{sp.short_title}
+        div(data-role="navbar")
+          ul(class="nav")
+            each sp in edition.web_hosting.footerB
+              li
+                a(href="#{sp.homepage}") #{sp.short_title}
+        p More spaces
+        div(data-role="navbar",class="nav-fb-topmenu")
+          ul
+            each sp in more_spaces
+              li
+                a(href="#{sp.homepage}", id="#{sp.data_icon}", data-icon="custom") #{sp.short_title}
+        p More Markets
+        div(data-role="navbar")
+          ul(class="nav")
+            li
+              a(href="/can") Canada    
+            li
+              a(href="/eur") Europe
+            li
+              a(href="/fra") France
+            li
+              a(href="/gbr") Great Britain
+

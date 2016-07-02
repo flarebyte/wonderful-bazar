@@ -1,0 +1,14 @@
+ {
+  "name": "dracula",
+  "description": "Dracula forced-based graph",
+  "maintainers": "",
+  "homepage": "",
+  "author": "",
+  "version": "0.8",
+  "main": "./lib/dracula_graph",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

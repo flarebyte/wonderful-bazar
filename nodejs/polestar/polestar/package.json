@@ -1,0 +1,14 @@
+ {
+  "name": "marketplace.ui.jade",
+  "description": "Calculate the probable urls for a given semantic id",
+  "maintainers": "Olivier Huin <olivier.huin@flarebyte.com>",
+  "homepage": "",
+  "author": "Olivier Huin",
+  "version": "0.8",
+  "main": "./lib/marketplace.ui.jade",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

@@ -1,0 +1,14 @@
+include ../mixin_all
+- if (data._root_)
+  div(data-role="page",id="rootlist")
+    include ../topmenu
+    mixin headerSearch
+    mixin marketplaceCategories(data._root_)
+    include ../search
+    div(data-role="content",itemscope,itemtype="http://schema.org/Product")
+      ul(data-role="listview", data-theme="e", data-divider-theme="a")
+        mixin searchBuyCategory(data._root_)
+        mixin listviewThumbnailOffersSearch(data._root_.results)
+    
+        
+    include ../footer

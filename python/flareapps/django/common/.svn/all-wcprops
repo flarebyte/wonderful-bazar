@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/flareapps/!svn/ver/1/django/common
+END
+views.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/flareapps/!svn/ver/1/django/common/views.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/flareapps/!svn/ver/1/django/common/__init__.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/flareapps/!svn/ver/1/django/common/tests.py
+END
+flare_formfields.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/flareapps/!svn/ver/1/django/common/flare_formfields.py
+END
+models.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/flareapps/!svn/ver/1/django/common/models.py
+END
+flare_dbfields.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/flareapps/!svn/ver/1/django/common/flare_dbfields.py
+END

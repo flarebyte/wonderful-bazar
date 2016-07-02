@@ -1,0 +1,14 @@
+ {
+  "name": "mp_browser",
+  "description": "Market Place browser",
+  "maintainers": "Olivier Huin <olivier.huin@flarebyte.com>",
+  "homepage": "",
+  "author": "Olivier Huin",
+  "version": "0.8",
+  "main": "./lib/mp_browser",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

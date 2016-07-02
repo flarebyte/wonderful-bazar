@@ -1,0 +1,85 @@
+---
+renderer:
+  template: 'bootstrap/view9459'
+  template_type: 'jade'
+  url: 'stage.flarebyte.com'
+headers:
+  content_language: 'en'
+head:
+  title: 'stage.flarebyte.com |  Before we move sites into production'
+meta:
+    author: 'Olivier Huin'
+    description: 'Area used to assemble, test and review our newest versions before we move them into production'
+link:
+    bootstrap: 'biz-flarebyte/bootstrap-2.3/p082418155130'
+    css: 'biz-flarebyte/custom/p607785726340'
+    icon: 'biz-flarebyte/custom/p607785726340/ico/flarebyte-logo-icon.463033393461'
+pageSchema: 'http://schema.org/WebPage'
+img: 
+  dir: 'biz-flarebyte/custom/p607785726340'
+home:
+  t: 'stage.flarebyte.com'
+  u: 'http://stage.flarebyte.com'
+jumbotron:
+  h1: 'Welcome to Flarebyte.com staging area'
+  lead: 'This part of the website is used to assemble, test and review our newest versions before we move them into production. You are most likely looking for our main website'
+  action:
+    u: 'http://flarebyte.com'
+    t: 'Go To Flarebyte.com'
+copyright: 
+  t: 'Copyright (c) 2013 Flarebyte.com Limited. All rights reserved.'
+topMenu:
+  - u: 'stage.flarebyte.com'
+    t: 'Home'
+    active: true
+  - u: '#contact'
+    t: 'Contact'
+
+marketing:
+  -
+    span: 6
+    list:
+      - t: 'Web software development'
+        p: 'Java, Scala, Python, Node.js, PHP, Javascript'
+      - t: 'System architecture'
+        p: 'We can design an object oriented architecture for your application that will facilitate the work of your team.'
+      - t: 'Project management'
+        p: 'Work breakdown, planning and budgeting. Monitoring time, cost, scope constraints.'
+  - 
+    span: 6
+    list:
+      - t: 'Graphic Design'
+        p: 'Web design, logo design, illustration'
+      - t: 'Business Models'
+        p: 'Understand our clients, understand their customers'
+      - t: 'Mobile and responsive'
+        p: 'Optimal viewing experience on any device'
+contact:
+  organization:
+    schema: 'http://schema.org/Organization'
+    name: 'Flarebyte.com Limited'
+    url: 'http://flarebyte.com/about'
+    description: 'Flarebyte.com Ltd is a start-up specialized in the development of web applications.'
+    legalName: 'Flarebyte.com Limited is registered in England & Wales with No. 06526932.'
+    postalAddress:
+      streetAddress: '88 Wood Street'
+      postOfficeBoxNumber: ''
+      addressLocality: 'London'
+      addressRegion: ''
+      postalCode: 'EC2V 7RS'
+      addressCountry: 'United Kingdom'
+    contactPoints:
+      - contactType: 'United Kingdom'
+        email: 'uk (at) flarebyte.com'
+        telephone: '+ 44 (0)20 8528 1006'
+        faxNumber: '+ 44 (0)20 8528 1001'
+      - contactType: 'France'
+        email: 'fr (at) flarebyte.com'
+        telephone: '+ 44 (0)20 8528 1006'
+        faxNumber: '+ 44 (0)20 8528 1001'
+i18n:
+  contactPoint:
+    email: 'Email'
+    telephone: 'Tel'
+    faxNumber: 'Fax'
+  contact: 'Contact'

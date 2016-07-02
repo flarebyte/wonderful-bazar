@@ -1,0 +1,14 @@
+ {
+  "name": "marketplace.dummy",
+  "description": "Process data and generates human friendly additions",
+  "maintainers": "Olivier Huin <olivier.huin@flarebyte.com>",
+  "homepage": "",
+  "author": "Olivier Huin",
+  "version": "0.8",
+  "main": "./lib/marketplace.dummy",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

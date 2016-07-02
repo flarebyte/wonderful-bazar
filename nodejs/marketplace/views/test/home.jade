@@ -1,0 +1,38 @@
+-each example in examples
+  h2 #{example.name}
+  div
+   table
+    th
+      td Zero
+      td One
+      td Three
+      td Seven
+    -each state in example.states
+      tr 
+        td #{state.name}
+        td
+          -if (state.zero)
+            span 
+              a(href="#{state.zero}") 0json
+          - else
+            span ___
+        td
+          -if (state.one)
+            span 
+               a(href="#{state.one}") 1json
+          - else
+            span ___
+        td
+          -if (state.three)
+            span 
+               a(href="#{state.three}") 3json
+          - else
+            span ___
+        td
+          -if (state.seven)
+            span 
+               a(href="#{state.seven}") 7json
+          - else
+            span ___
+        
+ 

@@ -1,0 +1,4 @@
+Some of the data available available in this repository come from third-party providers who hold their own license.
+If you intend to use this data, ex Wikipedia, you should check their website where you could get the latest data but also the appropriate license.
+Unfortunately, in some parts, code and data have been mixed together and it quite difficult to decouple the two after the facts.
+Most of this code is meant as an experiment, and should be refactored in a more sensible way if meant to be used elsewhere.

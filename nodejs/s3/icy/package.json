@@ -1,0 +1,24 @@
+{
+  "name": "icy",
+  "version": "0.1.17",
+  "description":"Build static assets to be uploaded to Amazon S3",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+     "grunt-contrib-clean":"*",
+     "grunt-contrib-copy":"*",
+     "grunt-yaml": "0.2.0",
+     "grunt-contrib-compress": "*",
+     "grunt-contrib-uglify":"*",
+     "grunt-contrib-cssmin":"*",
+     "grunt-contrib-imagemin":"*",
+     "grunt-file-regex-rename": "*",
+     "svgo-grunt":"*",
+     "grunt-s3":"*",
+     "grunt": "*"
+    }
+}

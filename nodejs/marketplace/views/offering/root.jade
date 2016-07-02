@@ -1,0 +1,24 @@
+include ../mixin_all
+- if (data._root_)
+  div(data-role="page",id="root")
+    include ../topmenu
+    mixin headerRoot(data._root_)
+    div(data-role="content",itemscope,itemtype="http://schema.org/Product")
+      ul(data-role="listview", data-theme="d", data-divider-theme="a")
+        mixin date_divider("Offering", data._root_)
+        mixin listItemOffer(data._root_)
+      p
+      ul(data-role="listview", data-theme="e", data-divider-theme="a")
+        mixin count_divider("Products", data._root_.includesObject)
+        mixin listviewThumbnailProducts(data._root_.includesObject)
+        li(data-role="list-divider") Seller
+        mixin listItemThumbnail(data._root_._availableAtOrFrom_)
+        li(data-role="list-divider") Warranty
+        mixin listItemThumbnail(data._root_._hasWarrantyPromise_)
+        li(data-role="list-divider") Other
+        mixin listItemsOtherRoot(data._root_)
+      p
+      ul(data-role="listview", data-theme="b", data-divider-theme="b")
+        mixin listItemPrice(data._root_)
+        
+    include ../footer

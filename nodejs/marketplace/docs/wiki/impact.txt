@@ -1,0 +1,78 @@
+typical=require("./marketplace.models.typical")
+core = require("./core")
+
+schema =
+  id: "#{typical.uri}/types#Impact"
+  name: "post"
+  links: [{rel: "full", href: "{id}"}]
+  type: "object"
+  properties:
+    spending: 
+      title: "_"
+      description:"__"
+      required: true
+      type: 'integer'
+      enum: typical.FUZZY
+    assets: 
+      title: "_"
+      description:"__"
+      required: true
+      type: 'integer'
+      enum: typical.FUZZY
+    workforce: 
+      title: "_"
+      description:"__"
+      required: true
+      type: 'integer'
+      enum: typical.FUZZY
+    satisfaction: 
+      title: "_"
+      description:"__"
+      required: true
+      type: 'integer'
+      enum: typical.FUZZY
+    autonomy: 
+      title: "_"
+      description:"__"
+      required: true
+      type: 'integer'
+      enum: typical.FUZZY
+    ecology: 
+      title: "_"
+      description:"__"
+      required: true
+      type: 'integer'
+      enum: typical.FUZZY
+    fairness: 
+      title: "_"
+      description:"__"
+      required: true
+      type: 'integer'
+      enum: typical.FUZZY
+    transparency: 
+      title: "_"
+      description:"__"
+      required: true
+      type: 'integer'
+      enum: typical.FUZZY
+    elegance: 
+      title: "_"
+      description:"__"
+      required: true
+      type: 'integer'
+      enum: typical.FUZZY
+    knowledge: 
+      title: "_"
+      description:"__"
+      required: true
+      type: 'integer'
+      enum: typical.FUZZY
+    agility: 
+      title: "_"
+      description:"__"
+      required: true
+      type: 'integer'
+      enum: typical.FUZZY
+  
+
+module.exports = typical.extend(schema, core)

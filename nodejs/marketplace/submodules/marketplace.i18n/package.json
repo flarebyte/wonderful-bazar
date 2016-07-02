@@ -1,0 +1,14 @@
+ {
+  "name": "marketplace.i18n",
+  "description": "Labels for different editions",
+  "maintainers": "Olivier Huin <olivier.huin@flarebyte.com>",
+  "homepage": "",
+  "author": "Olivier Huin",
+  "version": "0.8",
+  "main": "./lib/marketplace.i18n",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

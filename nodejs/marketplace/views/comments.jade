@@ -1,0 +1,18 @@
+include mixin_all
+- if (data._root_._comments_)
+  div(data-role="page",id="comments")
+    include topmenu
+    mixin headerSecondary(data._root_)
+    div(data-role="content",itemscope,itemtype="http://schema.org/Product")
+      ul(data-role="listview", data-theme="e", data-divider-theme="a")
+        mixin count_divider("Latest", data._root_._comments_.results)
+        each comment in data._root_._comments_.results
+          mixin listItemComment(comment)
+        mixin count_divider("Best", data._root_._comments_.results)
+        each comment in data._root_._comments_.results
+          mixin listItemComment(comment)
+        mixin count_divider("All", data._root_._comments_.results)
+        each comment in data._root_._comments_.results
+          mixin listItemComment(comment)
+        
+    include footer

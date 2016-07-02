@@ -1,0 +1,88 @@
+fs = require('fs')
+nodeunit = require('nodeunit')
+glob = require("glob")
+generator = require("marketplace.generator")
+runServer = require("marketplace.server")
+runFaker = require ("marketplace.faker")
+
+option '-o', '--output [DIR]', 'directory for compiled code'
+libnames = [
+  'flarebyte.i18n'
+  'flarebyte.jpath'
+  #'flarebyte.ldrest'
+  'flarebyte.recurser'
+  'flarebyte.scheduler'
+  'flarebyte.transformer'
+  #'marketplace.browser'
+  'marketplace.i18n'
+  'marketplace.i18n.slugdata'
+  'marketplace.models'
+  'marketplace.redirector'
+  'marketplace.viewer'
+  'marketplace.world'
+  ]
+
+
+task 'test:flarebyte', 'Tests all flarebyte modules', (options) ->
+  files = []
+  for libname in libnames
+    opts =
+      moduleStart: (name) ->
+        console.log("Starting #{name}")
+        return "moduleStart"
+      testDone: (name, assertions)->
+        for asst in assertions
+          if asst.failed()
+            message = assertions.message
+            console.log("failed: #{name}: #{message}")
+        return "testDone"
+      testStart: ->
+        return "testStart"
+      log: ->
+        return "log"
+      done: (assertions) ->
+        failures = assertions.failures()
+        passes = assertions.passes()
+        duration = assertions.duration
+        console.log("failures: #{failures}, passes: #{passes}, duration: #{duration} ms")
+        return "done"
+    filename = __dirname + "/node_modules/#{libname}/test/#{libname}.test.coffee"
+    files.push(filename)
+  nodeunit.runFiles(files,opts)
+  glob "**/marketplace.ui.jade.*.test.coffee", null, (err, uifiles) ->
+    uifilepaths = []
+    uifilepaths.push(__dirname+'/'+uifile) for uifile in uifiles
+    nodeunit.runFiles(uifilepaths,opts)
+
+task 'generate:browser', 'Generate Browser', (options) ->
+ generator.generateBrowser()
+
+task 'generate:jade-view', 'Generate Jade View', (options) ->
+ generator.generateJadeViewTemplates()
+ 
+task 'generate:ui-models', 'Generate UI models', (options) ->
+ generator.generateModelsUI()
+
+task 'generate:mapping', 'Generate Mapping', (options) ->
+ generator.generateMapping()
+
+task 'generate:controller', 'Generate Controller', (options) ->
+ generator.generateController()
+
+task 'generate:all', 'Generate All', (options) ->
+ generator.generateController()
+ generator.generateMapping()
+ generator.generateBrowser()
+ generator.generateJadeViewTemplates()
+
+task 'run:servers', 'Run the servers', (options) ->
+ runFaker("marketplace","HTTP_ID")
+ runFaker("marketplace","HTTP_DATA")
+ runFaker("marketplace","HTTPS_DATA")
+ runFaker("marketplace","HTTP_MEDIA")
+ runFaker("marketplace","HTTPS_MEDIA")
+ runFaker("marketplace","HTTP_TEST")
+ runServer("marketplace","flarebyte-marketplace","gbr",false)
+
+ 
+ 

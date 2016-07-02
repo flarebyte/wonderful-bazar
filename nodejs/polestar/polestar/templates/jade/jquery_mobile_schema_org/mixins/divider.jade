@@ -1,0 +1,22 @@
+mixin divider_date_updated_span(item)
+ - if (item.modified)
+   meta(itemprop="dateModified",content="#{item.modified}")
+   span(class="label info") #{item.modified__day}
+   span !{"&nbsp;"}
+   span(class="label info") #{item.modified__month_name}
+   span !{"&nbsp;"}
+   span(class="label info") #{item.modified__year}
+
+mixin divider_date(title, item)
+  li(data-role="list-divider", data-theme="f") #{title}
+    span(class="pull-right")
+      mixin divider_date_updated_span(item)
+
+mixin divider_count(title, items)
+  - if (items)
+    li(data-role="list-divider", data-theme="f") #{title}
+      span(class="ui-li-count") !{items.length}
+
+mixin divider_title(title)
+  li(data-role="list-divider") #{title}
+

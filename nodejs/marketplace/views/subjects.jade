@@ -1,0 +1,12 @@
+include mixin_all
+- if (data._root_._subject_)
+  div(data-role="page",id="subjects")
+    include topmenu
+    mixin headerSecondary(data._root_)
+    div(data-role="content",itemscope,itemtype="http://schema.org/Product")
+      ul(data-role="listview", data-theme="e", data-divider-theme="a")
+        mixin count_divider("Keywords", data._root_._subject_)
+        each keyword in data._root_._subject_
+          mixin listItemThumbnail(keyword)
+         
+    include footer

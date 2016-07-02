@@ -1,0 +1,32 @@
+mixin businessLogo150x50
+  img(src="http://localhost:3001/flarebyte-marketplace/image/default/00001/150x50/v1.png", alt="#{edition.web_hosting.brand.website.title}")
+
+mixin imageRoot(imgBaseUri,altText)
+  div
+    img(width="150", height="150", src="#{imgBaseUri}/150x150/i.png", alt="#{altText}")
+    
+mixin imageHighlight(imgBaseUri,altText)
+  div
+    img(width="300", height="200", src="#{imgBaseUri}/300x200/i.png", alt="#{altText}")
+
+mixin imageFeature(imgBaseUri,altText)
+  img(width="48", height="48", src="#{imgBaseUri}/48x48/i.png", alt="#{altText}")
+
+mixin imageRootTODO(imgBaseUri,altText)
+  div
+    noscript(data-src="#{imgBaseUri}",data-alt="#{altText}")
+      img(width="150", height="150", src="#{imgBaseUri}/150x150/i.png", alt="#{altText}")
+    
+mixin imageHighlightTODO(imgBaseUri,altText)
+  div
+    noscript(data-src="#{imgBaseUri}",data-alt="#{altText}")
+      img(width="48", height="48", src="#{imgBaseUri}/48x48/i.png", alt="#{altText}")
+
+mixin imageSecure
+  img(width="32", height="32", src="/images/lock.png", alt="SSL activated")
+  
+mixin imageOnline
+  img(width="32", height="32", src="/images/wifi.png", alt="connected to the web")
+
+mixin imageLogin
+  img(width="32", height="32", src="/images/geo-id.png", alt="Login")

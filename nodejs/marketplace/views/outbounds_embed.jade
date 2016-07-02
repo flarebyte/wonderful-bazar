@@ -1,0 +1,24 @@
+- if (data._root_._outbounds_)
+  div(data-role="page",id="outbounds")
+    include ../../topmenu
+    header
+      div(data-role="header", data-theme="a")
+        h3(itemprop="name") #{data._root_.label__title}
+        a(href="#root", data-role="button", data-transition="slideup", data-icon="back") Back
+        a(href="#edit12", data-role="button", data-transition="fade") Edit
+    div(data-role="content",itemscope,itemtype="http://schema.org/Product")
+      ul(data-role="listview", data-theme="e", data-divider-theme="a")
+        - if (data._root_._outbounds_._broader_)
+          mixin divider_count("Broader", data._root_._outbounds_._broader_)
+          each related in data._root_._outbounds_._broader_
+            mixin listing_thumbnail_with_href(related,'')
+        - if (data._root_._outbounds_._related_)
+          mixin divider_count("Related", data._root_._outbounds_._related_)
+          each related in data._root_._outbounds_._related_
+            mixin listing_thumbnail_with_href(related,'')
+        - if (data._root_._outbounds_._narrower_)
+          mixin divider_count("Narrower", data._root_._outbounds_._narrower_)
+          each related in data._root_._outbounds_._narrower_
+            mixin listing_thumbnail_with_href(related,'')
+
+    include ../../footer

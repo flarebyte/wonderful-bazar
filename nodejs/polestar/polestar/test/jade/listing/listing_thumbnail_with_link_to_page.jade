@@ -1,0 +1,11 @@
+include mixins/listing
+include mixins/image
+
+ul
+  mixin listing_thumbnail_with_link_to_page(everything.item, everything.pageKey)
+  mixin listing_thumbnail_with_link_to_page(no_item.item, no_item.pageKey)
+  mixin listing_thumbnail_with_link_to_page(item_is_null.item, item_is_null.pageKey)
+  mixin listing_thumbnail_with_link_to_page(no_stats.item, no_stats.pageKey)
+  mixin listing_thumbnail_with_link_to_page(no_image.item, no_image.pageKey)
+  mixin listing_thumbnail_with_link_to_page(no_title.item, no_title.pageKey)
+  mixin listing_thumbnail_with_link_to_page(no_abstract.item, no_abstract.pageKey)

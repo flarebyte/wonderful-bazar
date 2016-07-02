@@ -1,0 +1,103 @@
+mixin listItemThumbnail(item)
+  - if (item)
+    li
+      a(href="/")
+        mixin imageFeature(item.image, item.label__title)
+        h6 #{item.label__title} 
+        p #{item.abstract}
+        -if (item._stats_)
+          p 
+            mixin stats_span_views_likes(item._stats_)
+        
+
+mixin listviewThumbnail(items)
+  ul(data-role="listview")
+    each item in items
+      mixin listItemThumbnail(item)
+      
+mixin listviewThumbnailProducts(includesObject)
+  - if (includesObject)
+    each product in includesObject
+      - if (product._typeOfGood_)
+         mixin listItemThumbnail(product._typeOfGood_)
+
+mixin listItemPrice(item)
+  li 
+    a(href="#{item.about__page}?action=buy")
+    h5 Buy for #{item.UnitPriceSpecification.hasMaxCurrencyValue} #{item.UnitPriceSpecification.hasCurrency}.  
+      span
+        mixin itemExpiration(item._stats_)
+
+mixin listItemComments(item)
+  - if (item)
+    - if (item._comments_)
+      - if (item._stats_)
+        li
+          a(href="#comments") Comments
+            span(class="ui-li-count") #{item._stats_.numberOfComments}
+
+mixin listItemOutbounds(item)
+  - if (item)
+    - if (item._outbounds_)
+      li
+        a(href="#outbounds") Related
+          span(class="ui-li-count") !{item._outbounds_.related.length+item._outbounds_.broader.length+item._outbounds_.narrower.length}
+
+mixin listItemSubjects(item)
+  - if (item)
+    - if (item._subject_)
+      li
+        a(href="#subjects") Keywords
+          span(class="ui-li-count") !{item._subject_.length}
+
+mixin listItemOffer(item)
+  - if (item)
+    li
+      a(href="#description")
+        mixin imageFeature(item.image, item.label__title)
+        h6 #{item.label__title} 
+          span(class="label success") in stock
+        p #{item.abstract} 
+        -if (item._stats_)
+          p 
+            mixin stats_span_views_likes(item._stats_)
+
+mixin listItemOfferSearch(item)
+  - if (item)
+    li
+      a(href="#{item.about__view_page}")
+        mixin imageFeature(item.image, item.label__title)
+        h6 #{item.label__title} 
+          span(class="label success") in stock
+        p #{item.abstract} 
+        -if (item._stats_)
+          p 
+            mixin stats_span_views_likes(item._stats_)
+
+mixin listviewThumbnailOffersSearch(results)
+  - if (results)
+    each offer in results
+      mixin listItemOfferSearch(offer)
+
+mixin listItemComment(item)
+  - if (item)
+    li
+      a(href="/")
+        -if (item._creator_)
+          mixin imageFeature(item._creator_.image, item._creator_.label__title)
+          h4 #{item._creator_.label__title}
+        p #{item.abstract}
+        -if (item._stats_)
+          p 
+            mixin stats_span_views_likes(item._stats_)
+        p Was this helpul ? Yes/No/Spam
+          mixin actionsStd(item)
+        p(class="ui-li-aside")
+          mixin date_updated_span(item)
+
+mixin listItemsOtherRoot(item)
+  mixin listItemComments(item)
+  mixin listItemOutbounds(item)
+  mixin listItemSubjects(item)
+
+

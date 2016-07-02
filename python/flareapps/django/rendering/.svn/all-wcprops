@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/flareapps/!svn/ver/1/django/rendering
+END
+personwidgets.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/flareapps/!svn/ver/1/django/rendering/personwidgets.py
+END
+adswidgets.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/flareapps/!svn/ver/1/django/rendering/adswidgets.py
+END
+basewidgets.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/flareapps/!svn/ver/1/django/rendering/basewidgets.py
+END
+tests.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/flareapps/!svn/ver/1/django/rendering/tests.py
+END
+cyclopediawidgets.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/flareapps/!svn/ver/1/django/rendering/cyclopediawidgets.py
+END
+webrenderer.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/flareapps/!svn/ver/1/django/rendering/webrenderer.py
+END
+lorem-ipsum-textile.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/flareapps/!svn/ver/1/django/rendering/lorem-ipsum-textile.txt
+END
+moneywidgets.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/flareapps/!svn/ver/1/django/rendering/moneywidgets.py
+END
+xhtmlmprenderer.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/flareapps/!svn/ver/1/django/rendering/xhtmlmprenderer.py
+END
+contactwidgets.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/flareapps/!svn/ver/1/django/rendering/contactwidgets.py
+END
+surveywidgets.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/flareapps/!svn/ver/1/django/rendering/surveywidgets.py
+END
+linkwidgets.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/flareapps/!svn/ver/1/django/rendering/linkwidgets.py
+END
+timewidgets.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/flareapps/!svn/ver/1/django/rendering/timewidgets.py
+END
+weatherwidgets.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/flareapps/!svn/ver/1/django/rendering/weatherwidgets.py
+END
+devicewidgets.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/flareapps/!svn/ver/1/django/rendering/devicewidgets.py
+END

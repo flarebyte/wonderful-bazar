@@ -1,0 +1,37 @@
+mixin listing_stats_span_views_likes(stats)
+  - if (stats.numberOfReads)
+    em(itemprop="interactionCount", content="UserPageVisits:#{stats.numberOfReads}") #{stats.numberOfReads} 
+      span(class="label info") Views
+      span !{"&#160;&#160;&#160;"}
+  - if (stats.numberOfVotes)
+    em(itemprop="interactionCount", content="UserLikes:#{stats.numberOfVotes}") #{stats.numberOfVotes} 
+      span(class="label info") Likes
+
+mixin listing_thumbnail_with_href(item, href)
+  - if (item)
+    li
+      a(href="#{href}")
+        mixin image_feature(item.image, item.label__title)
+        -if (item.label__title)
+          h6 #{item.label__title} 
+        -if (item.abstract)
+          p #{item.abstract}
+        -if (item._stats_)
+          p 
+            mixin listing_stats_span_views_likes(item._stats_)
+
+mixin listing_thumbnail_with_link_to_page(item, pageKey)
+  - if (item)
+    mixin listing_thumbnail_with_href(item, item[pageKey])
+
+mixin listing_count_bubble_from_stats_with_href(title, item, href, statKey)
+  - if (item)
+    - if (item._stats_)
+      li
+        a(href="#{href}") #{title}
+          - if (item._stats_[statKey])
+            span(class="ui-li-count") #{item._stats_[statKey]}
+
+mixin listing_count_bubble_from_stats_with_link_to_page(title, item, pageKey, statKey)
+  - if (item)
+    mixin listing_count_bubble_from_stats_with_href(title, item, item[pageKey], statKey)

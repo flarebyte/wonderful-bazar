@@ -1,0 +1,14 @@
+ {
+  "name": "flarebyte.settings",
+  "description": "Labels for different editions",
+  "maintainers": "Olivier Huin <olivier.huin@flarebyte.com>",
+  "homepage": "",
+  "author": "Olivier Huin",
+  "version": "0.8",
+  "main": "./lib/flarebyte.settings",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}

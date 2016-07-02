@@ -1,0 +1,11 @@
+include mixins/listing
+include mixins/image
+
+ul
+  mixin listing_thumbnail_with_href(everything.item, everything.href)
+  mixin listing_thumbnail_with_href(no_item.item, no_item.href)
+  mixin listing_thumbnail_with_href(item_is_null.item, item_is_null.href)
+  mixin listing_thumbnail_with_href(no_stats.item, no_stats.href)
+  mixin listing_thumbnail_with_href(no_image.item, no_image.href)
+  mixin listing_thumbnail_with_href(no_title.item, no_title.href)
+  mixin listing_thumbnail_with_href(no_abstract.item, no_abstract.href)

@@ -1,0 +1,131 @@
+"52c859bb-c59b-43c1-9371-af05df1ab638":None, # Churchill Museum And Cabinet War Rooms
+
+underground operational command and control centre, WWII, Westminster
+Winston Churchill and the War Cabinet during WWII
+housed a staff of up to 528 people
+including a canteen, hospital, shooting range and dormitories.
+multimedia experience to bring the exciting story of Winston Churchill to life.
+private and public life of Winston Churchill (1874-1965)
+officer in the cavalry and war correspondent (Cuba,India,Sudan and Oldham,South Africa,Territorial service,Western front)
+Early years in Parliament, World War I and the Post War Coalition, Chancellor of the Exchequer,
+Role as wartime Prime Minister
+
+
+"da6fafd6-bafe-4403-9c2f-e7702b247436":None, # Sir John Soanes Museum
+
+Sir John Soane's house, museum and library
+over 30,000 pieces collected by the architect
+collections of paintings, drawings and antiquities
+Hogarth’s famous "Rake’s Progress" series
+the sarcophagus of Seti I in the basement Crypt
+
+"e4798bb2-5b17-471c-9f69-38a9d7e91a68":None, # National Gallery
+collection of over 2,300 paintings
+Duccio, Uccello, van Eyck, Lippi, Mantegna, Botticelli, Dürer, Memling, Bellini, 13C,14C,15C
+Leonardo, Cranach, Michelangelo, Raphael, Holbein, Bruegel, Bronzino, Titian, Veronese , 16C
+Caravaggio, Rubens, Poussin, Van Dyck, Velázquez, Claude, Rembrandt, Cuyp, Vermeer, 17C
+Canaletto, Goya, Turner, Constable, Ingres, Degas, Cézanne, Monet, Van Gogh, 18C,19C,20C
+
+
+"73294388-5a07-48ca-9012-3039a455da63":None, # Natural History Museum
+
+over 70 million items
+Botany, Entomology, Mineralogy, Palaeontology and Zoology.
+exhibition of dinosaur skeletons
+
+
+"aba1c848-0c8d-4b40-a77d-63630e971557":None, # National Maritime Museum
+
+two million items
+maritime art, cartography, manuscripts, ship models and plans, scientific and navigational instruments
+world's largest maritime historical reference library (100,000 volumes)
+
+
+"af70fe3b-c49f-429c-ac2d-782e44b80399":None, # V&A Museum of Childhood
+
+collection of childhood-related objects
+toys, dolls, dolls' houses, games, puppets, nursery, children's clothing and furniture
+
+"1662b8a9-2956-4a57-87e9-f797ea008b09":None, # Museum Of London
+
+The founding of Londinium in AD50.
+Roman London
+Medieval London
+War, Plague & Fire (1550s-1660s)
+
+"dd5d2700-33c9-45e6-a4f7-8c59f0046c26":None, # Museum In Docklands
+
+story of London's river, port and people
+collection of historical artefacts, models, and pictures.
+12 galleries
+
+
+"a3268d2c-47a4-4572-bb62-55b822ba9cb5":None, # Science Museum
+
+over 300,000 items
+Stephenson's Rocket,Charles Babbage's Difference engine, James Watson's model of DNA
+
+
+"874609af-cd08-43a8-9949-06e54bf0da03":None, # Wallace Collection
+
+25 galleries
+5,500 objects
+decorative arts, 15C-19C
+French paintings,furniture, arms & armour, porcelain, 18C
+Paintings,Watercolours and Drawings
+Furniture, Ceramics
+European and Oriental Arms and Armour
+Sculpture, Miniatures
+Medieval and Renaissance Works of Art
+Goldsmiths' Work
+
+"f156dd09-a605-4e83-9291-cb6e1e539b86":None, # British Museum
+seven million objects
+Ancient Egypt and Sudan
+Greek and Roman Antiquities
+Middle East, Asia, Africa, Oceania and the Americas
+Prints and Drawings
+Coins and Medals
+Prehistory
+
+"7262b139-af2b-4713-b8d1-7aaf5a344e17":None, # Horniman Museum
+
+350,000 objects
+anthropology, natural history and musical instruments
+
+
+"3e545cbe-5a9b-41dd-8d1d-953168c8472d":None, # Tate Modern
+
+international modern and contemporary art
+
+"bf4be7aa-9152-4dc3-af0f-cd0915cdd7e1":None, # HMS Belfast
+
+museum ship which served during both the Second World War and Korean War.
+
+"1ebf1c9b-9c32-4a80-999a-6f577a29ae50":None, # Victoria & Albert Museum
+
+4.5 million objects
+145 galleries
+decorative arts and design
+ceramics, glass, textiles, costumes, silver, ironwork, jewelry, furniture, medieval objects, sculpture, prints and printmaking, drawings and photographs
+
+"4db953be-e9a5-4bec-8099-684013a6a420":None, # Imperial War Museum
+
+archives of personal and official documents 
+photographs, film and video material, and oral history recordings
+military vehicles and aircraft
+
+
+"02298ab2-da45-46f9-9f79-6ad906d35868":None, # Tate Britain
+
+British art from 1500 to the present day. 
+David Hockney, Peter Blake and Francis Bacon
+
+
+"e241c444-5603-458f-8040-73b1b87c7c3a":None, # National Portrait Gallery
+
+11,000 portraits
+portraits of historically important and famous British people
+photographs and caricatures as well as paintings, drawings and sculpture
+
+

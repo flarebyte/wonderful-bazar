@@ -1,0 +1,8 @@
+include mixins/listing
+ul
+  mixin listing_count_bubble_from_stats_with_link_to_page(everything.title, everything.item, everything.pageKey, everything.statKey)
+  mixin listing_count_bubble_from_stats_with_link_to_page(no_item.title, no_item.item, no_item.pageKey, no_item.statKey)
+  mixin listing_count_bubble_from_stats_with_link_to_page(item_is_null.title, item_is_null.item, item_is_null.pageKey, item_is_null.statKey)
+  mixin listing_count_bubble_from_stats_with_link_to_page(stats_is_null.title, stats_is_null.item, stats_is_null.pageKey, stats_is_null.statKey)
+  mixin listing_count_bubble_from_stats_with_link_to_page(no_statKey_value.title, no_statKey_value.item, no_statKey_value.pageKey, no_statKey_value.statKey)
+  mixin listing_count_bubble_from_stats_with_link_to_page(no_pageKey_value.title, no_pageKey_value.item, no_pageKey_value.pageKey, no_pageKey_value.statKey)

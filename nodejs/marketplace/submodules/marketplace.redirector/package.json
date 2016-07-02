@@ -1,0 +1,14 @@
+ {
+  "name": "marketplace.redirector",
+  "description": "Calculate the probable urls for a given semantic id",
+  "maintainers": "Olivier Huin <olivier.huin@flarebyte.com>",
+  "homepage": "",
+  "author": "Olivier Huin",
+  "version": "0.8",
+  "main": "./lib/marketplace.redirector",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
