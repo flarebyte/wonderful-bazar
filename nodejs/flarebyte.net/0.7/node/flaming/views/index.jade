@@ -1,0 +1,24 @@
+extends layout
+include mixins_element
+include mixins8
+include generated_navigation
+
+block body
+  div(ng-controller='HelpCtrl')
+    #layout.pure-g-r.content
+      mixin sideNavigation
+      //mixin messages
+      div(ng-view)
+
+    div
+      | Angular seed app: v
+      span(app-version)
+
+  script(src='js/bower_components/angular/angular.js')
+  script(src='js/bower_components/angular-resource/angular-resource.js')
+  script(src='js/bower_components/angular-cache/dist/angular-cache.min.js')
+  script(src='js/app.js')
+  script(src='js/services.js')
+  script(src='js/controllers.js')
+  script(src='js/filters.js')
+  script(src='js/directives.js')

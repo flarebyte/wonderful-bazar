@@ -1,5 +1,5 @@
 
-module.exports = (grunt) ->  
+module.exports = (grunt) ->
   buildPath = "/Users/olivier/icybuild"
   secretPath = "yg3xgk57l4jizb81ld6wnqef"
   s3region = "eu-west-1"
@@ -13,11 +13,11 @@ module.exports = (grunt) ->
   # Project configuration.
   grunt.initConfig
     pkg: grunt.file.readJSON("package.json")
-    clean: 
+    clean:
       options:
         force: true
       build: ["/Users/olivier/icybuild"] #keep hard coded to avoid deleting disk by mistake
-    copy: 
+    copy:
       flash:
         expand: true
         cwd: "#{s3flash}"
@@ -82,8 +82,8 @@ module.exports = (grunt) ->
 
     s3:
       options:
-        key: "AKIAIM6PH6JSYBZ2B7TQ"
-        secret: "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"
+        key: "***"
+        secret: "***"
         region: "#{s3region}"
         debug: debugS3
       flash_n:
@@ -115,7 +115,7 @@ module.exports = (grunt) ->
             "Cache-Control":"public, max-age=31536000"
             "Expires":"Mon, 17 Apr 2023 21:31:12 GMT"
         upload: [{rel: "#{pathmedia}/", src:"#{pathmedia}/gz/**/*.*", dest:"icy/#{today}"}]
-    uglify: 
+    uglify:
       media:
         options:
           report: 'min'
@@ -123,7 +123,7 @@ module.exports = (grunt) ->
         cwd: "#{pathmedia}/no/pr"
         src: ['**/*.js']
         dest: "#{pathmedia}/no/pr"
-    cssmin: 
+    cssmin:
       media:
         options:
           report: 'min'
@@ -131,7 +131,7 @@ module.exports = (grunt) ->
         cwd: "#{pathmedia}/no/pr"
         src: ['**/*.css']
         dest: "#{pathmedia}/no/pr"
-    imagemin: 
+    imagemin:
       media:
         options:
           report: 'min'
@@ -158,7 +158,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks('grunt-contrib-imagemin')
   grunt.loadNpmTasks('grunt-s3')
   grunt.loadNpmTasks('svgo-grunt')
- 
+
 
   grunt.registerTask "flash", [
     "clean"

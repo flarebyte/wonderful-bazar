@@ -1,0 +1,21 @@
+!!! 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='Content-Type', content='text/html;charset=utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='#{meta.description}')
+    meta(name='author', content='#{meta.author}')
+    title= head.title    
+
+    link(href='#{css}/#{link.bootstrap}/css/bootstrap.css', rel='stylesheet', type='text/css')
+    link(href='#{css}/#{link.bootstrap}/css/bootstrap-responsive.css', rel='stylesheet', type='text/css')
+    link(href='#{css}/#{link.css}/css/bootstrap-landpage.css', rel='stylesheet', type='text/css')
+    if link.icon
+      link(rel='apple-touch-icon', sizes='144x144', href='#{media}/#{link.icon}.144x144')
+      link(rel='apple-touch-icon', sizes='114x114', href='#{media}/#{link.icon}.114x114')
+      link(rel='apple-touch-icon', sizes='72x72', href='#{media}/#{link.icon}.72x72')
+      link(rel='apple-touch-icon', href='#{media}/#{link.icon}.57x57')
+      link(rel='shortcut icon', href='#{media}/#{link.icon}.48x48')
+  body(itemscope itemtype="#{pageSchema}")
+    block content

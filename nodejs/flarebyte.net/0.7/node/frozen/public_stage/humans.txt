@@ -1,0 +1,12 @@
+/* TEAM */
+	Developer: Olivier Huin
+	Contact: https://github.com/olih
+	From:London, UK
+
+/* THANKS */
+
+/* SITE */
+	Last update:2013/04/20
+	Language: English
+	Doctype:HTML5
+	IDE: Sublime Text, Textmate

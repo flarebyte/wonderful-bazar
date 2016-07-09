@@ -1,0 +1,29 @@
+{
+  "name": "magma",
+  "version": "0.0.1",
+  "description": "Private back-end server for managing data models",
+  "private": true,
+  "scripts": {
+    "start": "coffee live.coffee"
+  },
+  "dependencies": {
+    "express": "*",
+    "nconf": "*",
+    "winston": "*",
+    "jade": "*"
+  },
+    "devDependencies": {
+    "grunt": "*",
+    "string": "*",
+    "glob": "*",
+    "grunt-coffeelint": "*",
+    "grunt-bumpup": "*",
+    "grunt-simple-mocha": "*",
+    "grunt-contrib-coffee": "*",
+    "async": "*",
+    "lodash": "*",
+    "mocha": "*",
+    "should": "*"
+  }
+
+}

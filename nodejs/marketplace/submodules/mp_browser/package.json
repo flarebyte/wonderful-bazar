@@ -1,7 +1,7 @@
  {
   "name": "mp_browser",
   "description": "Market Place browser",
-  "maintainers": "Olivier Huin <olivier.huin@flarebyte.com>",
+  "maintainers": "Olivier Huin <>",
   "homepage": "",
   "author": "Olivier Huin",
   "version": "0.8",

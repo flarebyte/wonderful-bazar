@@ -1,8 +1,7 @@
 {
     "name": "flarebyte.ldrest",
     "description": "Process data and generates human friendly additions",
-    "maintainers": "Olivier Huin <olivier.huin@flarebyte.com>",
-    "homepage": "",
+     "homepage": "",
     "author": "Olivier Huin",
     "version": "0.1",
     "main": "./lib/flarebyte.ldrest",

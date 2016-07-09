@@ -1,0 +1,23 @@
+extends layout3043
+include mixins5022
+
+block content
+    .container-narrow
+      .masthead
+        mixin topMenu
+        mixin home
+      hr
+      div(class="row-fluid")
+        div(class="span7")
+          .jumbotron
+            mixin jumbotron
+            mixin mainImage
+        div(class="offset1 span4")
+          mixin contact
+      hr
+      mixin marketing
+
+      hr
+      .footer
+        p
+          | #{copyright.t}

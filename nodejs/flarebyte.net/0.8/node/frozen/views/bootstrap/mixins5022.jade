@@ -1,0 +1,110 @@
+mixin organization(organization)
+  if typeof(organization) !== 'undefined' && organization !== null
+    div(itemscope='itemscope', itemtype='#{organization.schema}')
+      a(itemprop='url', href='#{organization.url}')
+      if organization.name
+        div(itemprop='name')
+          span(class="label") #{organization.name}
+      if organization.description
+        div(itemprop='description')
+          | #{organization.description}
+        hr
+      mixin postalAddress(organization.postalAddress)
+      if organization.email
+        div(itemprop='email') #{organization.email}
+      if organization.telephone
+        div(itemprop='telephone') #{organization.telephone}
+      if organization.faxNumber
+        div(itemprop='faxNumber') #{organization.faxNumber}
+      if organization.legalName 
+        div(itemprop='legalName')
+          i #{organization.legalName}
+      each contactPoint in organization.contactPoints
+        mixin contactPoint(contactPoint)
+ 
+    
+mixin postalAddress(postalAddress)
+  if postalAddress
+    div(itemprop='address', itemscope='itemscope', itemtype='http://schema.org/PostalAddress')
+      if postalAddress.streetAddress
+        p(itemprop='streetAddress') #{postalAddress.streetAddress}
+      if postalAddress.addressLocality
+        span(itemprop='addressLocality') 
+          b #{postalAddress.addressLocality} !{"&nbsp;"}
+      if (postalAddress.postOfficeBoxNumber)
+        span(itemprop='postOfficeBoxNumber') #{postalAddress.postOfficeBoxNumber} !{"&nbsp;"}
+      if postalAddress.addressRegion
+        span(itemprop='addressRegion') #{postalAddress.addressRegion} !{"&nbsp;"}
+      if postalAddress.postalCode
+        p(itemprop='postalCode') #{postalAddress.postalCode}
+      if postalAddress.addressCountry
+        span(itemprop='addressCountry') 
+          b #{postalAddress.addressCountry} !{"&nbsp;"}
+
+mixin contactPoint(contactPoint)
+  if contactPoint
+    div(itemprop='contactPoint', itemscope='itemscope', itemtype='http://schema.org/ContactPoint')
+      if contactPoint.contactType
+        div(itemprop='contactType') 
+          span(class="label") #{contactPoint.contactType}
+      if contactPoint.email
+        div(itemprop='email') #{i18n.contactPoint.email}: #{contactPoint.email}
+      if contactPoint.telephone
+        div(itemprop='telephone') #{i18n.contactPoint.telephone}: #{contactPoint.telephone}
+      if contactPoint.faxNumber
+        div(itemprop='faxNumber') #{i18n.contactPoint.faxNumber}: #{contactPoint.faxNumber}
+
+mixin jumbotron
+  if typeof(jumbotron) !== 'undefined' && jumbotron !== null 
+    if jumbotron.h1
+      h2 #{jumbotron.h1}
+    if jumbotron.h2
+      h2 #{jumbotron.h1}
+    p.lead
+      | #{jumbotron.lead}
+    if jumbotron.action
+      a(class="btn btn-large btn-success", href="#{jumbotron.action.u}") #{jumbotron.action.t}
+
+mixin topMenu
+  if typeof(topMenu) !== 'undefined' && topMenu !== null 
+   ul.nav.nav-pills.pull-right
+      each item in topMenu
+        if item.active
+          li.active
+            a(href='#{item.u}') #{item.t}
+        else
+            li
+              a(href='#{item.u}') #{item.t}
+
+mixin home
+  if typeof(home) !== 'undefined' && home !== null 
+    h3#logo.muted #{home.t}
+      a(href="#{home.u}")
+        img(src="http://flairbyte.com/flarebyte/en/png/logo/8/logo-8.png", alt="Flarebyte.com Limited")
+
+
+mixin bulletpoints(bulletpoints)
+  if bulletpoints
+      each point in bulletpoints
+          h4 #{point.t}
+          p #{point.p}
+
+mixin marketing
+  if typeof(marketing) !== 'undefined' && marketing !== null
+    div(class="row-fluid marketing")
+      each col in marketing
+        div(class="span#{col.span}")
+          mixin bulletpoints(col.list)
+
+mixin contact
+  if typeof(contact) !== 'undefined' && contact !== null
+    #contact.contact.row-fluid.well
+      h2 #{i18n.contact}
+      mixin organization(contact.organization)
+
+mixin mainImage
+  if typeof(img) !== 'undefined' && img !== null && img.main
+    img.img-rounded(src='#{media}/#{img.dir}/gif/#{img.main.u}.gif', alt='#{img.main.a}')
+
+
+

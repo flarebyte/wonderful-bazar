@@ -1,0 +1,60 @@
+mixin navButton(label,href,clazz,count)
+  li
+    a(href='#{href}')
+      i(class='#{clazz}')
+      | &nbsp;#{label}
+      if count
+        span.email-count (#{count})
+
+mixin logo
+  .pure-u-1
+    a(href='http://www.flarebyte.com/')
+      img(src='img/logo-flarebyte.com.png', alt='Flarebyte.com Limited')
+
+
+mixin item(name,subject,desc,img,alt,state,repeat)
+
+  div(class="email-item #{state} pure-g", ng-repeat="#{repeat}")
+    .pure-u
+      img.email-avatar(alt='#{alt}', src='#{img}', height='64', width='64')
+    .pure-u-3-4
+      h5.email-name #{name}
+      h4.email-subject #{subject}
+      p.email-desc
+        | #{desc}
+  
+
+mixin dTitle(title)
+  h1.email-content-title #{title}
+
+mixin dSubtitleFrom(from, time)
+  p.email-content-subtitle
+    | From
+    a #{from}
+    | at
+    span #{time}
+
+mixin dButtons(label,clazz)
+  button.pure-button.secondary-button
+    i(class="#{clazz}")
+    | #{label}
+
+mixin search
+  .pure-u-1
+    form.pure-form
+        fieldset
+            input(type='text', class='pure-input-2-3', placeholder='search')
+            button.pure-button
+              i.fa.fa-search.fa-lg
+            .pure-menu.pure-menu-open.pure-menu-horizontal
+                ul
+                    li
+                      a(href='#')
+                        i(class="fa-caret-down")
+                    li.pure-menu-selected
+                      a(href='#') Flickr
+                    li
+                      a(href='#') Messenger
+                    li
+                      a(href='#') Sports
+

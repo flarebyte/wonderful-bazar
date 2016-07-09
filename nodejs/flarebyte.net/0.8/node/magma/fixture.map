@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "fixture.js",
+  "sourceRoot": "",
+  "sources": [
+    "fixture.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,6BAAA;;AAAA,EAAA,IAAA,GAAO,OAAA,CAAQ,gBAAR,CAAP,CAAA;;AAAA,EACA,KAAA,GAAQ,OAAA,CAAQ,OAAR,CADR,CAAA;;AAAA,EAEA,OAAA,GAAU,OAAA,CAAQ,SAAR,CAFV,CAAA;;AAAA,EAIA,OAAA,GAAU,OAAA,CAAQ,eAAR,CAJV,CAAA;;AAAA,EAMA,OAAO,CAAC,OAAR,CAAA,CANA,CAAA;AAAA"
+}

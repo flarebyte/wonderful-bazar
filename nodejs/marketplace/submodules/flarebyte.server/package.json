@@ -1,7 +1,6 @@
  {
   "name": "flarebyte.server",
   "description": "Process data and generates human friendly additions",
-  "maintainers": "Olivier Huin <olivier.huin@flarebyte.com>",
   "homepage": "",
   "author": "Olivier Huin",
   "version": "0.8",

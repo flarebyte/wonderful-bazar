@@ -1,0 +1,21 @@
+include ../mixins_element
+
+#list.pure-u-1
+  mixin item("{{profile0.profileRef|uppercase}}","{{profile0.profileRef}}","{{profile0.profileRef}}","{{profile0.profileRef}}","avatar of {{profile0.profileRef}}","{{profile0.visualstate}}","profile0 in profile.results")
+#main.pure-u-1
+  .email-content
+    .email-content-header.pure-g
+      .pure-u-1-2
+        h1.email-content-title Profile
+        mixin dSubtitleFrom("olivier", "8:90")
+      .pure-u-1-2.email-content-controls
+        mixin dButtons("Forward","")
+        mixin dButtons("Backward","")
+    .email-content-body
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+      p
+        | Regards,
+      br
+        | Tilo
+

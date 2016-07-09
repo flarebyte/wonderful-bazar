@@ -1,0 +1,26 @@
+{
+  "name": "frozen",
+  "version": "0.1.20-0",
+  "description": "Serve frozen pages",
+  "private": true,
+  "scripts": {
+    "start": "coffee live.coffee"
+  },
+  "dependencies": {
+    "express": "3.2.0",
+    "underscore": "*",
+    "nodeunit": "*",
+    "mocha": "*",
+    "nconf": "*",
+    "winston": "*",
+    "jade": "*"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "glob": "*",
+    "grunt-coffeelint": "*",
+    "grunt-bumpup": "*",
+    "grunt-simple-mocha": "*",
+    "should": "*"
+  }
+}
